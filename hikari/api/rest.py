@@ -3097,7 +3097,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         !!! note
             This requires the `access_token` to have the
             [hikari.applications.OAuth2Scope.GUILDS_JOIN][] scope enabled along
-            with the authorization of a Bot which has `MANAGE_INVITES`[]
+            with the authorization of a Bot which has `MANAGE_INVITES`
             permission within the target guild.
 
         Parameters
@@ -3371,7 +3371,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
             If any of the fields that are passed have an invalid value or
             if there are no more spaces for the type of emoji in the guild.
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS`[] in the server.
+            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
         hikari.errors.NotFoundError
             If the guild is not found.
         hikari.errors.UnauthorizedError
@@ -3426,7 +3426,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         hikari.errors.BadRequestError
             If any of the fields that are passed have an invalid value.
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS`[] in the server.
+            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
         hikari.errors.NotFoundError
             If the guild or the emoji are not found.
         hikari.errors.UnauthorizedError
@@ -3466,7 +3466,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         Raises
         ------
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS`[] in the server.
+            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
         hikari.errors.NotFoundError
             If the guild or the emoji are not found.
         hikari.errors.UnauthorizedError
@@ -3644,7 +3644,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
             If any of the fields that are passed have an invalid value or
             if there are no more spaces for the sticker in the guild.
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS`[] in the server.
+            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
         hikari.errors.NotFoundError
             If the guild is not found.
         hikari.errors.UnauthorizedError
@@ -3700,7 +3700,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         hikari.errors.BadRequestError
             If any of the fields that are passed have an invalid value.
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS`[] in the server.
+            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
         hikari.errors.NotFoundError
             If the guild or the sticker are not found.
         hikari.errors.UnauthorizedError
@@ -3740,7 +3740,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         Raises
         ------
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS`[] in the server.
+            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
         hikari.errors.NotFoundError
             If the guild or the sticker are not found.
         hikari.errors.UnauthorizedError
@@ -7238,7 +7238,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         !!! note
             This requires the `access_token` to have the
             [hikari.applications.OAuth2Scope.APPLICATIONS_COMMANDS_PERMISSION_UPDATE][]
-            scope enabled along with the authorization of a Bot which has `MANAGE_INVITES`[]
+            scope enabled along with the authorization of a Bot which has `MANAGE_INVITES`
             permission within the target guild.
 
         !!! note
