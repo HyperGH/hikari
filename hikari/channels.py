@@ -863,9 +863,9 @@ class GroupDMChannel(PrivateChannel):
     """Represents a group direct message channel.
 
     !!! note
-        This doesn't have the methods found on `TextableChannel` as bots cannot
-        interact with a group DM that they own by sending or seeing messages in
-        it.
+        This doesn't have the methods found on [hikari.channels.TextableChannel][]
+        as bots cannot interact with a group DM that they own by sending or
+        seeing messages in it.
     """
 
     owner_id: snowflakes.Snowflake = attrs.field(eq=False, hash=False, repr=True)
