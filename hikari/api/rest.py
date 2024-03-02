@@ -1473,7 +1473,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         hikari.errors.BulkDeleteError
             An error containing the messages successfully deleted, and the
             messages that were not removed. The
-            [BaseException.__cause__] of the exception will be the
+            [`BaseException.__cause__`][] of the exception will be the
             original error that terminated this process.
         """
 
