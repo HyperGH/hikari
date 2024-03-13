@@ -3370,7 +3370,8 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
             If any of the fields that are passed have an invalid value or
             if there are no more spaces for the type of emoji in the guild.
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
+            If you are missing [hikari.permissions.Permissions.MANAGE_GUILD_EXPRESSIONS][]
+            in the server.
         hikari.errors.NotFoundError
             If the guild is not found.
         hikari.errors.UnauthorizedError
@@ -3425,7 +3426,8 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         hikari.errors.BadRequestError
             If any of the fields that are passed have an invalid value.
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
+            If you are missing [hikari.permissions.Permissions.MANAGE_GUILD_EXPRESSIONS][]
+            in the server.
         hikari.errors.NotFoundError
             If the guild or the emoji are not found.
         hikari.errors.UnauthorizedError
@@ -3465,7 +3467,8 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         Raises
         ------
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
+            If you are missing [hikari.permissions.Permissions.MANAGE_GUILD_EXPRESSIONS][]
+            in the server.
         hikari.errors.NotFoundError
             If the guild or the emoji are not found.
         hikari.errors.UnauthorizedError
@@ -3643,7 +3646,8 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
             If any of the fields that are passed have an invalid value or
             if there are no more spaces for the sticker in the guild.
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
+            If you are missing [hikari.permissions.Permissions.MANAGE_GUILD_EXPRESSIONS][]
+            in the server.
         hikari.errors.NotFoundError
             If the guild is not found.
         hikari.errors.UnauthorizedError
@@ -3699,7 +3703,8 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         hikari.errors.BadRequestError
             If any of the fields that are passed have an invalid value.
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
+            If you are missing [hikari.permissions.Permissions.MANAGE_GUILD_EXPRESSIONS][]
+            in the server.
         hikari.errors.NotFoundError
             If the guild or the sticker are not found.
         hikari.errors.UnauthorizedError
@@ -3739,7 +3744,8 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         Raises
         ------
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
+            If you are missing [hikari.permissions.Permissions.MANAGE_GUILD_EXPRESSIONS][]
+            in the server.
         hikari.errors.NotFoundError
             If the guild or the sticker are not found.
         hikari.errors.UnauthorizedError

@@ -1792,7 +1792,8 @@ class PartialGuild(snowflakes.Unique):
             If any of the fields that are passed have an invalid value or
             if there are no more spaces for the sticker in the guild.
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
+            If you are missing [hikari.permissions.Permissions.MANAGE_GUILD_EXPRESSIONS][]
+            in the server.
         hikari.errors.NotFoundError
             If the guild is not found.
         hikari.errors.UnauthorizedError
@@ -1844,7 +1845,8 @@ class PartialGuild(snowflakes.Unique):
         hikari.errors.BadRequestError
             If any of the fields that are passed have an invalid value.
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
+            If you are missing [hikari.permissions.Permissions.MANAGE_GUILD_EXPRESSIONS][]
+            in the server.
         hikari.errors.NotFoundError
             If the guild or the sticker are not found.
         hikari.errors.UnauthorizedError
@@ -1882,7 +1884,8 @@ class PartialGuild(snowflakes.Unique):
         Raises
         ------
         hikari.errors.ForbiddenError
-            If you are missing `MANAGE_EMOJIS_AND_STICKERS` in the server.
+            If you are missing [hikari.permissions.Permissions.MANAGE_GUILD_EXPRESSIONS][]
+            in the server.
         hikari.errors.NotFoundError
             If the guild or the sticker are not found.
         hikari.errors.UnauthorizedError
