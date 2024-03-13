@@ -3096,7 +3096,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         !!! note
             This requires the `access_token` to have the
             [hikari.applications.OAuth2Scope.GUILDS_JOIN][] scope enabled along
-            with the authorization of a Bot which has `MANAGE_INVITES`
+            with the authorization of a Bot which has [hikari.permissions.Permissions.CREATE_INSTANT_INVITE][]
             permission within the target guild.
 
         Parameters
