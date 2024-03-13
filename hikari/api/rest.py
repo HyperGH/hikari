@@ -5254,10 +5254,11 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         """Fetch the members from a guild.
 
         !!! warning
-            This endpoint requires the `GUILD_MEMBERS` intent to be enabled in
-            the dashboard, not necessarily authenticated with it if using the
-            gateway. If you don't have the intents you can use [hikari.api.rest.RESTClient.search_members][]
-            which doesn't require any intents.
+            This endpoint requires the [hikari.intents.Intents.GUILD_MEMBERS] intent
+            to be enabled in the dashboard, not necessarily authenticated with it
+            if using the gateway. If you don't have the intents you can use
+            [hikari.api.rest.RESTClient.search_members][] which doesn't require
+            any intents.
 
         !!! note
             This call is not a coroutine function, it returns a special type of
