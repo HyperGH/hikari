@@ -837,14 +837,14 @@ class Embed:
         Other Parameters
         ----------------
         name : hikari.undefined.UndefinedOr[str]
-            The new field name to use. If left to the default (`undefined`),
+            The new field name to use. If left to the default ([hikari.undefined.UNDEFINED][]),
             then it will not be changed.
         value : hikari.undefined.UndefinedOr[str]
-            The new field value to use. If left to the default (`undefined`),
+            The new field value to use. If left to the default ([hikari.undefined.UNDEFINED][]),
             then it will not be changed.
         inline : hikari.undefined.UndefinedOr[bool]
             [True][] to inline the field, or [False][] to force
-            it to be on a separate line. If left to the default (`undefined`),
+            it to be on a separate line. If left to the default ([hikari.undefined.UNDEFINED][]),
             then it will not be changed.
 
         Returns
