@@ -92,10 +92,10 @@ UndefinedOr = typing.Union[T, UndefinedType]
     If you see a type with this marker, it may be [hikari.undefined.UNDEFINED][] or
     the value it wraps. For example, `UndefinedOr[float]` would mean the value could
     be a [float][], or the literal [hikari.undefined.UNDEFINED][] value.
-    
+
     On the other hand, `typing.Optional[float]` would mean the value could be
     a [float][], or the literal [None][] value.
-    
+
     The reason for using this is in some places, there is a semantic difference
     between specifying something as being [None][], i.e. "no value", and
     having a default to specify that the value has just not been mentioned. The
@@ -104,14 +104,14 @@ UndefinedOr = typing.Union[T, UndefinedType]
     call. Editing a message content and setting it to [None][] would be expected to
     clear the content, whereas setting it to [hikari.undefined.UNDEFINED][] would be
     expected to leave the value as it is without changing it.
-    
+
     Consider `UndefinedOr[T]` semantically equivalent to `undefined` versus
     `null` in JavaScript, or `Optional<T>` versus `null` in Java and C#.
 
 
 !!! note
     If in doubt, remember:
-    
+
     - [hikari.undefined.UNDEFINED][] means there is no value present, or that it has
         been left to the default value, whatever that would be.
     - [None][] means the value is present and explicitly empty/null/void,
