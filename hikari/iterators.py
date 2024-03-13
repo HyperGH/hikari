@@ -422,9 +422,9 @@ class LazyIterator(typing.Generic[ValueT], abc.ABC):
     def enumerate(self, *, start: int = 0) -> LazyIterator[typing.Tuple[int, ValueT]]:
         """Enumerate the paginated results lazily.
 
-        This behaves as an asyncio-friendly version of `enumerate`
+        This behaves as an asyncio-friendly version of [enumerate][]
         which uses much less memory than collecting all the results first and
-        calling `enumerate` across them.
+        calling [enumerate][] across them.
 
         Parameters
         ----------

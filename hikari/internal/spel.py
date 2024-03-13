@@ -34,7 +34,7 @@ Python lambdas are clunky, and using a nested function is nasty boilerplate.
 
 For applying `"bar.baz"` to `foo`, we assume `bar` is an attribute or property
 of `foo`, and `baz` is an attribute or property of `foo.bar`. We may instead
-want to invoke a method that takes no parameters (looking at `str.islower`, as
+want to invoke a method that takes no parameters (looking at [str.islower][], as
 an example. To do this, we append `()` onto the attribute name. For example,
 applying `author.username.islower()` to a [hikari.messages.Message][]
 object.
