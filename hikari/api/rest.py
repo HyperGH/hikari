@@ -7794,8 +7794,8 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         hikari.errors.ForbiddenError
             If you are missing the permission needed to view this event.
 
-            For `VOICE` and `STAGE_CHANNEL` events, [hikari.permissions.Permissions.VIEW_CHANNEL][] is required
-            in their associated guild to see the event.
+            For `VOICE` and `STAGE_CHANNEL` events, [hikari.permissions.Permissions.VIEW_CHANNEL][]
+            is required in their associated guild to see the event.
         hikari.errors.NotFoundError
             If the guild or event is not found.
         hikari.errors.RateLimitTooLongError
