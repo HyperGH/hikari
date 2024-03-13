@@ -157,7 +157,6 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
             [hikari.channels.GroupDMChannel][],
             [hikari.channels.GuildTextChannel][],
             [hikari.channels.GuildVoiceChannel][],
-            `GuildStoreChannel`,
             [hikari.channels.GuildNewsChannel][].
 
             Likewise, the [hikari.channels.GuildChannel][] can be used to
