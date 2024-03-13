@@ -479,11 +479,11 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         Parameters
         ----------
         guild : hikari.snowflakes.SnowflakeishOr[hikari.guilds.PartialGuild]
-            Object or Id of the guild to edit a voice state in.
+            Object or ID of the guild to edit a voice state in.
         channel : hikari.snowflakes.SnowflakeishOr[hikari.channels.GuildStageChannel]
-            Object or Id of the channel to edit a voice state in.
+            Object or ID of the channel to edit a voice state in.
         user : hikari.snowflakes.SnowflakeishOr[hikari.users.PartialUser]
-            Object or Id of the user to to edit the voice state of.
+            Object or ID of the user to edit the voice state of.
 
         Other Parameters
         ----------------
