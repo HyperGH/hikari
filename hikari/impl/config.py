@@ -104,8 +104,8 @@ class ProxySettings(config.ProxySettings):
     for the authentication header.
 
     If you are using basic auth, you should consider using the
-    `BasicAuthHeader` helper object here, as this will provide any
-    transformations you may require into a base64 string.
+    [hikari.impl.config.BasicAuthHeader][] helper object here, as this will 
+    provide any transformations you may require into a Base64 string.
 
     The default is to have this set to [None][], which will
     result in no authentication being provided.
