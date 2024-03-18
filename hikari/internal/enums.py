@@ -514,7 +514,7 @@ class Flag(metaclass=_FlagMeta):
     implementation, while retaining the majority of the external interface
     that Python's [enum.Flag][] provides.
 
-    In simple terms, an flag is a set of wrapped constant [int][]
+    In simple terms, a flag is a set of wrapped constant [int][]
     values that can be combined in any combination to make a special value.
     This is a more efficient way of combining things like permissions together
     into a single integral value, and works by setting the individual `1` and `0`
