@@ -255,9 +255,9 @@ class Enum(metaclass=_EnumMeta):
     implementation, while retaining the majority of the external interface
     that Python's [enum.Enum][] provides.
 
-    An `Enum` is a simple class containing a discrete set of constant values
-    that can be used in place of this type. This acts as a type-safe way
-    of representing a set number of "things".
+    An [hikari.internal.enums.Enum][] is a simple class containing a discrete set
+    of constant values that can be used in place of this type. This acts as a
+    type-safe way of representing a set number of "things".
 
     !!! warning
         Some semantics such as subtype checking and instance checking may
