@@ -5632,7 +5632,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         *,
         reason: undefined.UndefinedOr[str] = undefined.UNDEFINED,
     ) -> None:
-        """Alias of `kick_user`."""
+        """Alias of [hikari.api.rest.RESTClient.kick_user][]."""
 
     @abc.abstractmethod
     async def ban_user(
@@ -5690,7 +5690,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         delete_message_seconds: undefined.UndefinedOr[time.Intervalish] = undefined.UNDEFINED,
         reason: undefined.UndefinedOr[str] = undefined.UNDEFINED,
     ) -> None:
-        """Alias of `ban_user`."""
+        """Alias of [hikari.api.rest.RESTClient.ban_user][]."""
 
     @abc.abstractmethod
     async def unban_user(
@@ -5740,7 +5740,7 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         *,
         reason: undefined.UndefinedOr[str] = undefined.UNDEFINED,
     ) -> None:
-        """Alias of `unban_user`."""
+        """Alias of [hikari.api.rest.RESTClient.unban_user][]."""
 
     @abc.abstractmethod
     async def fetch_ban(
