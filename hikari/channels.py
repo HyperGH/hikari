@@ -1192,7 +1192,8 @@ class PermissibleGuildChannel(GuildChannel):
         hikari.errors.UnauthorizedError
             If you are unauthorized to make the request (invalid/missing token).
         hikari.errors.ForbiddenError
-            If you are missing the `MANAGE_PERMISSIONS` permission in the channel.
+            If you are missing the [MANAGE_PERMISSIONS][hikari.permissions.Permissions.MANAGE_ROLES]
+            permission in the channel.
         hikari.errors.NotFoundError
             If the channel is not found or the target is not found if it is
             a role.
@@ -1227,7 +1228,8 @@ class PermissibleGuildChannel(GuildChannel):
         hikari.errors.UnauthorizedError
             If you are unauthorized to make the request (invalid/missing token).
         hikari.errors.ForbiddenError
-            If you are missing the `MANAGE_PERMISSIONS` permission in the channel.
+            If you are missing the [MANAGE_PERMISSIONS][hikari.permissions.Permissions.MANAGE_ROLES]
+            permission in the channel.
         hikari.errors.NotFoundError
             If the channel is not found or the target is not found.
         hikari.errors.RateLimitTooLongError
