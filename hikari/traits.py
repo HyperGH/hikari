@@ -193,7 +193,7 @@ class RESTAware(
 class VoiceAware(fast_protocol.FastProtocolChecking, typing.Protocol):
     """Structural supertype for a voice-aware object.
 
-    This is an object that provides a [voice][] property to allow the creation
+    This is an object that provides a `voice` property to allow the creation
     of custom voice client instances.
     """
 

@@ -544,7 +544,7 @@ class GatewayBot(traits.GatewayBotAware):
         ```
 
         This event can be listened to elsewhere by subscribing to it with
-        [hikari.impl.event_manager_base.EventManager.subscribe][].
+        [hikari.impl.event_manager_base.EventManagerBase.subscribe][].
 
         ```py
             @bot.listen(EveryoneMentionedEvent)
@@ -619,7 +619,7 @@ class GatewayBot(traits.GatewayBotAware):
         -------
         typing.Callable[[EventT], EventT]
             A decorator for a coroutine function that passes it to
-            [EventManager.subscribe][] before returning the function
+            [hikari.impl.event_manager.EventManagerImpl.subscribe][] before returning the function
             reference.
 
         See Also

@@ -118,8 +118,9 @@ class VoiceServerUpdateEvent(VoiceEvent):
     what endpoint to connect to.
 
     !!! warning
-        This will not contain the scheme to use. Use the [endpoint][] property
-        to get a representation that has this prepended.
+        This will not contain the scheme to use. Use the 
+        [endpoint][hikari.events.voice_events.VoiceServerUpdateEvent.endpoint]
+        property to get a representation that has this prepended.
     """
 
     @property

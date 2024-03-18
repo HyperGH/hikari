@@ -290,7 +290,7 @@ class GuildBuilder(abc.ABC):
         color : hikari.undefined.UndefinedOr[hikari.colors.Colorish]
             If provided, the role's color.
         colour : hikari.undefined.UndefinedOr[hikari.colors.Colorish]
-            An alias for [color][].
+            An alias for `color`.
         hoist : hikari.undefined.UndefinedOr[bool]
             If provided, whether to hoist the role.
         mentionable : hikari.undefined.UndefinedOr[bool]
@@ -1982,9 +1982,10 @@ class MessageActionRowBuilder(ComponentBuilder, abc.ABC):
         """Add a component to this action row builder.
 
         !!! warning
-            It is generally better to use [ActionRowBuilder.add_button][]
-            and [ActionRowBuilder.add_select_menu][] to add your
-            component to the builder. Those methods utilize this one.
+            It is generally better to use
+            [hikari.api.special_endpoints.MessageActionRowBuilder.add_interactive_button][]
+            and [hikari.api.special_endpoints.MessageActionRowBuilder.add_select_menu][]
+            to add your component to the builder. Those methods utilize this one.
 
         Parameters
         ----------
@@ -2080,8 +2081,8 @@ class MessageActionRowBuilder(ComponentBuilder, abc.ABC):
         """Add a select menu component to this action row builder.
 
         For channel select menus and text select menus see
-        [MessageActionRowBuilder.add_channel_menu][] and
-        [MessageActionRowBuilder.add_text_menu][].
+        [hikari.api.special_endpoints.MessageActionRowBuilder.add_channel_menu][]
+        and [hikari.api.special_endpoints.MessageActionRowBuilder.add_text_menu][].
 
         Parameters
         ----------
@@ -2218,9 +2219,10 @@ class ModalActionRowBuilder(ComponentBuilder, abc.ABC):
         """Add a component to this action row builder.
 
         !!! warning
-            It is generally better to use [ActionRowBuilder.add_button][]
-            and [ActionRowBuilder.add_select_menu][] to add your
-            component to the builder. Those methods utilize this one.
+            It is generally better to use
+            [hikari.api.special_endpoints.MessageActionRowBuilder.add_interactive_button][]
+            and [hikari.api.special_endpoints.MessageActionRowBuilder.add_select_menu][]
+            to add your component to the builder. Those methods utilize this one.
 
         Parameters
         ----------

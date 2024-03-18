@@ -290,7 +290,7 @@ class Intents(enums.Flag):
     GUILD_MESSAGE_TYPING = 1 << 11
     """Subscribes to the events listed below.
 
-    * [TYPING_START][] (in guilds only)
+    * `TYPING_START` (in guilds only)
     """
 
     DM_MESSAGES = 1 << 12

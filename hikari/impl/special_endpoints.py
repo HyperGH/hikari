@@ -892,7 +892,7 @@ def _maybe_cast(
 @attrs_extensions.with_copy
 @attrs.define(kw_only=False, weakref_slot=False)
 class AutocompleteChoiceBuilder(special_endpoints.AutocompleteChoiceBuilder):
-    """Standard implementation of [special_endpoints.AutocompleteChoiceBuilder][]."""
+    """Standard implementation of [hikari.api.special_endpoints.AutocompleteChoiceBuilder][]."""
 
     _name: str = attrs.field(alias="name")
     _value: typing.Union[int, str, float] = attrs.field(alias="value")
@@ -1950,7 +1950,7 @@ class TextInputBuilder(special_endpoints.TextInputBuilder):
 
 @attrs.define(kw_only=True, weakref_slot=False)
 class MessageActionRowBuilder(special_endpoints.MessageActionRowBuilder):
-    """Standard implementation of [hikari.api.special_endpoints.ActionRowBuilder][]."""
+    """Standard implementation of [hikari.api.special_endpoints.MessageActionRowBuilder][]."""
 
     _components: typing.List[special_endpoints.ComponentBuilder] = attrs.field(alias="components", factory=list)
     _stored_type: typing.Optional[int] = attrs.field(default=None, init=False)
@@ -2077,7 +2077,7 @@ class MessageActionRowBuilder(special_endpoints.MessageActionRowBuilder):
 
 @attrs.define(kw_only=True, weakref_slot=False)
 class ModalActionRowBuilder(special_endpoints.ModalActionRowBuilder):
-    """Standard implementation of [hikari.api.special_endpoints.ActionRowBuilder][]."""
+    """Standard implementation of [hikari.api.special_endpoints.ModalActionRowBuilder][]."""
 
     _components: typing.List[special_endpoints.ComponentBuilder] = attrs.field(alias="components", factory=list)
     _stored_type: typing.Optional[int] = attrs.field(init=False, default=None)

@@ -442,8 +442,8 @@ class EventManager(abc.ABC):
         -------
         EventStream[hikari.events.base_events.Event]
             The async iterator to handle streamed events. This must be started
-            with `with stream:` or [stream.open][] before
-            asynchronously iterating over it.
+            with `with stream:` or [stream.open][hikari.api.event_manager.EventStream.open]
+            before asynchronously iterating over it.
 
         Examples
         --------

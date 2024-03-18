@@ -151,7 +151,8 @@ class MessageCreateEvent(MessageEvent, abc.ABC):
 class GuildMessageCreateEvent(MessageCreateEvent):
     """Event that is fired when a message is created within a guild.
 
-    This contains the full message in the internal [message][] attribute.
+    This contains the full message in the internal
+    [message][hikari.events.message_events.GuildMessageCreateEvent.message] attribute.
     """
 
     message: messages.Message = attrs.field()
@@ -234,7 +235,8 @@ class GuildMessageCreateEvent(MessageCreateEvent):
 class DMMessageCreateEvent(MessageCreateEvent):
     """Event that is fired when a message is created within a DM.
 
-    This contains the full message in the internal [message][] attribute.
+    This contains the full message in the internal
+    [message][hikari.events.message_events.GuildMessageCreateEvent.message] attribute.
     """
 
     message: messages.Message = attrs.field()

@@ -205,8 +205,9 @@ class MemberChunkEvent(ShardEvent, typing.Sequence["guilds.Member"]):
     presences: typing.Mapping[snowflakes.Snowflake, presences_.MemberPresence] = attrs.field(repr=False)
     """Mapping of user IDs to found member presence objects.
 
-    This will be empty if no presences are found or [include_presences][] is not passed as
-    [True][] while requesting the member chunks.
+    This will be empty if no presences are found or 
+    [include_presences][hikari.api.shard.GatewayShard.request_guild_members] is
+    not passed as [True][] while requesting the member chunks.
     """
 
     nonce: typing.Optional[str] = attrs.field(repr=True)

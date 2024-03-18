@@ -626,7 +626,8 @@ class PartialMessage(snowflakes.Unique):
 
             Members that are not cached will not appear in this mapping. This
             means that there is a very small chance that some users provided
-            in [notified_users][] may not be present here.
+            in [hikari.messages.PartialMessage.user_mentions][] may not be
+            present here.
         """
         if self.user_mentions is undefined.UNDEFINED:
             return undefined.UNDEFINED
@@ -659,8 +660,8 @@ class PartialMessage(snowflakes.Unique):
 
             Roles that are not cached will not appear in this mapping. This
             means that there is a very small chance that some role IDs provided
-            in [notifies_role_ids][] may not be present here. This is a limitation
-            of Discord, again.
+            in [hikari.messages.PartialMessage.role_mention_ids][] may not be
+            present here. This is a limitation of Discord, again.
         """
         if self.role_mention_ids is undefined.UNDEFINED:
             return undefined.UNDEFINED
