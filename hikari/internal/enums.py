@@ -740,7 +740,7 @@ class Flag(metaclass=_FlagMeta):
         """Check if none of the given flags are part of this value.
 
         !!! note
-            This is essentially the opposite of `Flag.any`.
+            This is essentially the opposite of [hikari.internal.enums.Flag.any][].
 
         Returns
         -------
