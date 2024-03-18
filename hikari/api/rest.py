@@ -7246,8 +7246,9 @@ class RESTClient(traits.NetworkSettingsAware, abc.ABC):
         !!! note
             This requires the `access_token` to have the
             [hikari.applications.OAuth2Scope.APPLICATIONS_COMMANDS_PERMISSION_UPDATE][]
-            scope enabled along with the authorization of a Bot which has `MANAGE_INVITES`
-            permission within the target guild.
+            scope enabled along with the authorization of a Bot which has
+            [hikari.permissions.Permissions.CREATE_INSTANT_INVITE][] permission
+            within the target guild.
 
         !!! note
             This overwrites any previously set permissions.
