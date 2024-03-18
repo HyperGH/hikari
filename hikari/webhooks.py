@@ -746,7 +746,7 @@ class IncomingWebhook(PartialWebhook, ExecutableWebhook):
         Raises
         ------
         ValueError
-            If `use_token` is passed as [True][] when `Webhook.token`
+            If `use_token` is passed as [True][] when [hikari.webhooks.IncomingWebhook.token][]
             is [None][].
         hikari.errors.ForbiddenError
             If you're not in the guild that owns this webhook or
