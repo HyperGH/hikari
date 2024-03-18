@@ -972,7 +972,7 @@ class PartialMessage(snowflakes.Unique):
                 on your file system is passed, then this resource is uploaded
                 as an attachment using non-blocking code internally and streamed
                 using bit-inception where possible. This depends on the
-                type of `concurrent.futures.Executor` that is being used for
+                type of [concurrent.futures.Executor][] that is being used for
                 the application (default is a thread pool which supports this
                 behaviour).
         attachments : hikari.undefined.UndefinedOr[typing.Sequence[hikari.files.Resourceish]],
@@ -999,7 +999,7 @@ class PartialMessage(snowflakes.Unique):
             If provided, whether the message will be TTS (Text To Speech).
         reply : typing.Union[hikari.undefined.UndefinedType, hikari.snowflakes.SnowflakeishOr[hikari.messages.PartialMessage], bool]
             If provided and [True][], reply to this message.
-            If provided and not `bool`, the message to reply to.
+            If provided and not [bool][], the message to reply to.
         reply_must_exist : hikari.undefined.UndefinedOr[bool]
             If provided, whether to error if the message being replied to does
             not exist instead of sending as a normal (non-reply) message.

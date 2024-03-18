@@ -570,17 +570,17 @@ class Flag(metaclass=_FlagMeta):
     * `e1 & e2` :
         Bitwise `AND` operation. Will return a member that contains all flags
         that are common between both operands on the values. This also works with
-        one of the operands being an `int`eger. You may instead use
+        one of the operands being an [int][]eger. You may instead use
         the `intersection` method.
     * `e1 | e2` :
         Bitwise `OR` operation. Will return a member that contains all flags
         that appear on at least one of the operands. This also works with
-        one of the operands being an `int`eger. You may instead use
+        one of the operands being an [int][]eger. You may instead use
         the `union` method.
     * `e1 ^ e2` :
         Bitwise `XOR` operation. Will return a member that contains all flags
         that only appear on at least one and at most one of the operands.
-        This also works with one of the operands being an `int`eger.
+        This also works with one of the operands being an [int][].
         You may instead use the `symmetric_difference` method.
     * `~e` :
         Return the inverse of this value. This is equivalent to disabling all
@@ -591,10 +591,10 @@ class Flag(metaclass=_FlagMeta):
         Bitwise set difference operation. Returns all flags set on `e1` that are
         not set on `e2` as well. You may instead use the `difference`
         method.
-    * `bool(e)` : `bool`
+    * `bool(e)` : [bool][]
         Return [True][] if `e` has a non-zero value, otherwise
         [False][].
-    * `E.A in e`: `bool`
+    * `E.A in e`: [bool][]
         [True][] if `E.A` is in `e`. This is functionally equivalent
         to `E.A & e == E.A`.
     * `iter(e)` :
@@ -605,38 +605,38 @@ class Flag(metaclass=_FlagMeta):
         powers of two (this means if converted to twos-compliment binary,
         exactly one bit must be a `1`). In simple terms, this means that you
         should not expect combination flags to be returned.
-    * `e1 == e2` : `bool`
+    * `e1 == e2` : [bool][]
         Compare equality.
-    * `e1 != e2` : `bool`
+    * `e1 != e2` : [bool][]
         Compare inequality.
-    * `e1 < e2` : `bool`
+    * `e1 < e2` : [bool][]
         Compare by ordering.
-    * `int(e)` : `int`
+    * `int(e)` : [int][]
         Get the integer value of this flag
-    * `repr(e)` : `str`
+    * `repr(e)` : [str][]
         Get the machine readable representation of the flag member `e`.
-    * `str(e)` : `str`
-        Get the `str` name of the flag member `e`.
+    * `str(e)` : [str][]
+        Get the [str][] name of the flag member `e`.
 
     Special properties on each flag member
     --------------------------------------
-    * `e.name` : `str`
+    * `e.name` : [str][]
         The name of the member. For composite members, this will be generated.
-    * `e.value` : `int`
+    * `e.value` : [int][]
         The value of the member.
 
     Special members on each flag member
     -----------------------------------
-    * `e.all(E.A, E.B, E.C, ...)` : `bool`
+    * `e.all(E.A, E.B, E.C, ...)` : [bool][]
         Returns [True][] if __all__ of `E.A`, `E.B`, `E.C`, et cetera
         make up the value of `e`.
-    * `e.any(E.A, E.B, E.C, ...)` : `bool`
+    * `e.any(E.A, E.B, E.C, ...)` : [bool][]
         Returns [True][] if __any__ of `E.A`, `E.B`, `E.C`, et cetera
         make up the value of `e`.
-    * `e.none(E.A, E.B, E.C, ...)` : `bool`
+    * `e.none(E.A, E.B, E.C, ...)` : [bool][]
         Returns [True][] if __none__ of `E.A`, `E.B`, `E.C`, et cetera
         make up the value of `e`.
-    * `e.split()` : `typing.Sequence`
+    * `e.split()` : [typing.Sequence][]
         Explode the value into a sequence of each __documented__ flag that can
         be combined to make up the value `e`. Returns a sorted sequence of each
         power-of-two flag that makes up the value `e`. This is equivalent to

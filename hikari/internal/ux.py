@@ -91,7 +91,7 @@ def init_logging(
 
         This can be [None][] to not enable logging automatically.
 
-        If you pass a [str][] or a `int`, it is interpreted as
+        If you pass a [str][] or a [int][], it is interpreted as
         the global logging level to use, and should match one of `"DEBUG"`,
         `"INFO"`, `"WARNING"`, `"ERROR"` or `"CRITICAL"`.
         The configuration will be set up to use a `colorlog` coloured logger,
