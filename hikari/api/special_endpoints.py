@@ -297,6 +297,7 @@ class GuildBuilder(abc.ABC):
             If provided, whether to make the role mentionable.
         position : hikari.undefined.UndefinedOr[int]
             If provided, the position of the role.
+
         Returns
         -------
         hikari.snowflakes.Snowflake
