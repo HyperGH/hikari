@@ -275,7 +275,8 @@ class GuildBuilder(abc.ABC):
         """Create a role.
 
         !!! warning
-            The first role you create must always be the `@everyone` role.
+            The first role you create (i.e., position 0) must always be the
+            `@everyone` role.
 
         Parameters
         ----------
@@ -294,7 +295,8 @@ class GuildBuilder(abc.ABC):
             If provided, whether to hoist the role.
         mentionable : hikari.undefined.UndefinedOr[bool]
             If provided, whether to make the role mentionable.
-
+        position : hikari.undefined.UndefinedOr[int]
+            If provided, the position of the role.
         Returns
         -------
         hikari.snowflakes.Snowflake
