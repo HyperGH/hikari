@@ -41,7 +41,7 @@ if typing.TYPE_CHECKING:
 
 
 class UndefinedType:
-    """The type of the [hikari.undefined.UNDEFINED][] singleton sentinel value."""
+    """The type of the [`hikari.undefined.UNDEFINED`][] singleton sentinel value."""
 
     __slots__: typing.Sequence[str] = ()
 
@@ -59,7 +59,7 @@ class UndefinedType:
         return self
 
     def __getstate__(self) -> typing.Any:
-        # Returning False tells pickle to not call [__setstate__][] on unpickling.
+        # Returning False tells pickle to not call [`__setstate__`][] on unpickling.
         return False
 
     def __repr__(self) -> str:
@@ -88,21 +88,21 @@ T = typing.TypeVar("T", covariant=True)
 UndefinedOr = typing.Union[T, UndefinedType]
 """Type hint to mark a type as being semantically optional.
 
-!!! warning "**THIS IS NOT THE SAME AS [typing.Optional][] BY DEFINITION!**"
-    If you see a type with this marker, it may be [hikari.undefined.UNDEFINED][] or
+!!! warning "**THIS IS NOT THE SAME AS [`typing.Optional`][] BY DEFINITION!**"
+    If you see a type with this marker, it may be [`hikari.undefined.UNDEFINED`][] or
     the value it wraps. For example, `UndefinedOr[float]` would mean the value could
-    be a [float][], or the literal [hikari.undefined.UNDEFINED][] value.
+    be a [`float`][], or the literal [`hikari.undefined.UNDEFINED`][] value.
 
     On the other hand, `typing.Optional[float]` would mean the value could be
-    a [float][], or the literal [None][] value.
+    a [`float`][], or the literal [`None`][] value.
 
     The reason for using this is in some places, there is a semantic difference
-    between specifying something as being [None][], i.e. "no value", and
+    between specifying something as being [`None`][], i.e. "no value", and
     having a default to specify that the value has just not been mentioned. The
-    main example of this is in [hikari.api.rest.RESTClient.edit_message][] endpoints
+    main example of this is in [`hikari.api.rest.RESTClient.edit_message`][] endpoints
     where the contents will only be changed if they are explicitly mentioned in the
-    call. Editing a message content and setting it to [None][] would be expected to
-    clear the content, whereas setting it to [hikari.undefined.UNDEFINED][] would be
+    call. Editing a message content and setting it to [`None`][] would be expected to
+    clear the content, whereas setting it to [`hikari.undefined.UNDEFINED`][] would be
     expected to leave the value as it is without changing it.
 
     Consider `UndefinedOr[T]` semantically equivalent to `undefined` versus
@@ -112,15 +112,15 @@ UndefinedOr = typing.Union[T, UndefinedType]
 !!! note
     If in doubt, remember:
 
-    - [hikari.undefined.UNDEFINED][] means there is no value present, or that it has
+    - [`hikari.undefined.UNDEFINED`][] means there is no value present, or that it has
         been left to the default value, whatever that would be.
-    - [None][] means the value is present and explicitly empty/null/void,
+    - [`None`][] means the value is present and explicitly empty/null/void,
         where this has a deterministic documented behaviour and no differentiation
-        is made between a [None][] value, and one that has been omitted.
+        is made between a [`None`][] value, and one that has been omitted.
 """
 
 UndefinedNoneOr = typing.Union[UndefinedOr[T], None]
-"""Type hint for a value that may be [hikari.undefined.UNDEFINED], or [None][].
+"""Type hint for a value that may be [hikari.undefined.UNDEFINED], or [`None`][].
 
 `UndefinedNoneOr[T]` is simply an alias for
 `UndefinedOr[typing.Optional[T]]`, which would expand to
@@ -129,15 +129,15 @@ UndefinedNoneOr = typing.Union[UndefinedOr[T], None]
 
 
 def all_undefined(*items: typing.Any) -> bool:
-    """Get if all of the provided items are [hikari.undefined.UNDEFINED][]."""
+    """Get if all of the provided items are [`hikari.undefined.UNDEFINED`][]."""
     return all(item is UNDEFINED for item in items)
 
 
 def any_undefined(*items: typing.Any) -> bool:
-    """Get if any of the provided items are [hikari.undefined.UNDEFINED][]."""
+    """Get if any of the provided items are [`hikari.undefined.UNDEFINED`][]."""
     return any(item is UNDEFINED for item in items)
 
 
 def count(*items: typing.Any) -> int:
-    """Count the number of items that are provided that are [hikari.undefined.UNDEFINED][]."""
+    """Count the number of items that are provided that are [`hikari.undefined.UNDEFINED`][]."""
     return sum(item is UNDEFINED for item in items)
