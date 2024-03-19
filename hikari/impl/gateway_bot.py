@@ -181,16 +181,20 @@ class GatewayBot(traits.GatewayBotAware):
             All the following must be true:
                 1. `auto_chunk_members` is [True][] (the user wants us to).
                 2. We have the necessary intents ([hikari.intents.Intents.GUILD_MEMBERS][]).
-                3. The guild is marked as "large" or we do not have [hikari.intents.Intents.GUILD_PRESENCES][] intent
-                   Discord will only send every other member objects on the `GUILD_CREATE`
-                   payload if presence intents are also declared, so if this isn't the case then we also
-                   want to chunk small guilds.
+                3. The guild is marked as "large" or we do not have
+                   [hikari.intents.Intents.GUILD_PRESENCES][] intent Discord will
+                   only send every other member objects on the `GUILD_CREATE`
+                   payload if presence intents are also declared, so if this
+                   isn't the case then we also want to chunk small guilds.
 
         - Needed?
             One of the following must be true:
-                1. We have a cache, and it requires it (it is enabled for [MEMBERS][]), but we are
-                   not limited to only our own member (which is included in the `GUILD_CREATE` payload).
-                2. The user is waiting for the member chunks (there is an event listener for it).
+                1. We have a cache, and it requires it (it is enabled for
+                   [hikari.api.CacheComponents.MEMBERS][]), but we are not limited
+                   to only our own member (which is included in the `GUILD_CREATE`
+                   payload).
+                2. The user is waiting for the member chunks (there is an event
+                   listener for it).
     logs : typing.Union[None, str, int, typing.Dict[str, typing.Any], os.PathLike]
         The flavour to set the logging to.
 
